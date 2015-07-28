@@ -9,7 +9,7 @@ http://kampov.com/
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Timeline.js</title>
+  <title>StepByStep.js</title>
   <link rel="stylesheet" href="css/style.css">
   <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -23,7 +23,7 @@ http://kampov.com/
     </header>
     <div id="main">
     <section>
-      <div class="kampov-timeline">
+      <div class="StepByStep">
         <ul>
           <li>
             <div class="step-details">
@@ -43,18 +43,7 @@ http://kampov.com/
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam esse nesciunt veniam perferendis odit vel velit, necessitatibus accusamus, impedit deleniti animi similique, totam voluptate molestias nisi iusto omnis quasi ipsa!</p>
             </div>
           </li>
-          <li>
-            <div>
-              <h3>One Click Install</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta doloremque optio sequi, praesentium laboriosam, eligendi nulla facere quam possimus commodi aliquid obcaecati minima veritatis id nam inventore dolor perspiciatis totam!</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3>Well Done! :)</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam necessitatibus vero debitis dolor, animi consectetur adipisci magni quibusdam voluptas officiis, recusandae asperiores delectus mollitia perspiciatis non nemo id ducimus tempore!</p>
-            </div>
-          </li>
+
         </ul>
     </div>
     </section>
@@ -62,5 +51,11 @@ http://kampov.com/
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="src/jquery.StepByStep.js"></script>
+  <script>
+    $('.StepByStep').StepByStep({
+      visible: 1
+    });
+  </script>
 </body>
 </html>
