@@ -1,0 +1,21 @@
+/*
+StepByStep.js — https://github.com/vladkampov/StepByStep.js
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+Copyright © 2015 Vlad Kampov
+http://kampov.com/
+*/
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic&subset=latin,latin-ext);
+html,body{margin:0;padding:0}
+article, aside, footer, header, nav, section {display: block}
+#container {
+	width:  980px;
+	margin: 0 auto;
+	padding: 0 50px;
+}
+body{
+	background: #222;
+	color:#fff;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	text-align: center
+}
