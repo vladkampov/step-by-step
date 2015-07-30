@@ -1,0 +1,457 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"anim",
+				"animateIt"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"la",
+				"last-child"
+			],
+			[
+				"activ",
+				"activeColors"
+			],
+			[
+				"in",
+				"inactiveColor"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"bac",
+				"background-size"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"te",
+				"text-transform"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"fo",
+				"font-weight"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 2363,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/jquery.StepByStep.js",
+			"settings":
+			{
+				"buffer_size": 7283,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/style.css",
+			"settings":
+			{
+				"buffer_size": 556,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"last_filter": "Package Control: Insta",
+		"selected_items":
+		[
+			[
+				"Package Control: Insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib2,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/stepbystep"
+	],
+	"file_history":
+	[
+		"/C/stepbystep/README.md",
+		"/C/stepbystep/.gitignore",
+		"/C/Users/Hillz/Desktop/id000011/css/custom.css",
+		"/C/Users/Hillz/Desktop/id000011/index.html",
+		"/C/Users/Hillz/Desktop/landing/css/custom.css",
+		"/C/Program Files/xampp/htdocs/projects/angular-seed/app/view1/view1.html",
+		"/C/Users/Hillz/Dropbox/000091/html-premium/css/custom.css",
+		"/C/Users/Hillz/Dropbox/000091/html-premium/index.html",
+		"/C/Program Files/xampp/htdocs/projects/shopmd/skin/frontend/rwd/default/css/styles.css",
+		"/C/Users/Hillz/Desktop/Mage_Catalog.csv",
+		"/C/Program Files/xampp/htdocs/projects/shopmd/app/locale/ru_RU/Mage_Catalog.csv",
+		"/C/jic/subscribe.html",
+		"/C/jic/neworderostriv.html",
+		"/C/jic/realyneworder.html",
+		"/C/jic/mywishlist.html",
+		"/C/Program Files (x86)/Git/doc/git/html/git-config.html",
+		"/C/Users/Hillz/Desktop/promo.php",
+		"/C/Users/Hillz/Desktop/sss.html",
+		"/C/Users/Hillz/AppData/Local/Temp/fz3temp-1/promo.php",
+		"/C/Users/Hillz/AppData/Local/Temp/fz3temp-1/index.html",
+		"/C/Users/Hillz/AppData/Local/Temp/fz3temp-1/db_mysql.inc",
+		"/C/Users/Hillz/AppData/Local/Temp/fz3temp-1/db_mysql 2.inc",
+		"/C/Users/Hillz/AppData/Local/Temp/fz3temp-1/config.rb",
+		"/C/Users/Hillz/AppData/Local/Temp/fz3temp-1/index.php",
+		"/C/Users/Hillz/AppData/Local/Temp/fz3temp-1/lcfirst.php",
+		"/C/Users/Hillz/AppData/Local/Temp/fz3temp-1/class.smtp.php",
+		"/C/Users/Hillz/AppData/Local/Temp/fz3temp-1/mail.php",
+		"/C/jic/mywishlist",
+		"/C/Users/Hillz/AppData/Local/Temp/fz3temp-1/config.inc",
+		"/C/Users/Hillz/Desktop/jic/neworder.html",
+		"/C/Users/Hillz/Desktop/jic/neworderostriv.html",
+		"/C/Users/Hillz/Desktop/.gitignore",
+		"/C/Users/Hillz/.ssh/id_rsa.pub"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"margin-top",
+			"var div = document.createElement('div');",
+			"shade",
+			"deta",
+			"visible",
+			"<div class=\"step-nav\">\n              <i class=\"icomoon icomoon-icon-previous11 step-back\"></i>\n              <i class=\"icomoon icomoon-icon-next15 step-next\"></i>\n            </div>",
+			"Light",
+			"webkit"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"active",
+			"",
+			"Bold"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2363,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2326,
+								2326
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/jquery.StepByStep.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7283,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1269,
+								1265
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": ".gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 556,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								533,
+								533
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "project.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
