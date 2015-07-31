@@ -67,7 +67,7 @@ If you find a bug, please report it [here on Github](https://github.com/vladkamp
 
 ## Developer
 
-Developed Vlad Kampov, [kampov.com](http://kampov.com)
+Developed by Vlad Kampov, [kampov.com](http://kampov.com)
 
 + [@Vlad Kampov](//twitter.com/VladKampov)
 + [Github Profile](//github.com/vladkampov)
