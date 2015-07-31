@@ -7,7 +7,8 @@
       numColor: '#222',
       numColorActive: '#fff',
       activeColors: ['#ec0101','#ffbf00', '#00a9fe', '#1bb012', '#888'],
-      colorLast: '#004179'
+      colorLast: '#004179',
+      after: 'StepByStep-after'
     }, options);
 
     function shadeColor(color, percent) {  
@@ -29,7 +30,6 @@
       var list = $(this).find('ul');
       var newLi = document.createElement('li');
       list.append(newLi)
-
       var li = list.find('li');
       li.css({
       	'float': 'left',
@@ -39,6 +39,7 @@
         'position': 'relative',
         'height': '350px'
       });
+      $(this).css({'overflow': 'auto','width':'960px'})
       li.last().css({'width': (100 / (list.children().length * 2))  + '%'})
       var details = $('.step-details');
       var max_height = 0;
@@ -49,15 +50,24 @@
         } else {
           $(this).css('visibility','hidden')
         } 
-        if (i % 2 == 0) 
+        if (i % 2 == 0){
           $(this).css({'padding': '0.4em 1em 0'}) 
+          $(this).parent().find('p').css({
+            'margin': 0
+          })
+          $(this).parent().css({'height':25})
+        }
         else {
           $(this).css({'padding': '0 1em 0.4em'});
-          height = $(this).parent().innerHeight()
-          $(this).css({'margin-top': - height + 110});
+          height = $(this).find('p').height()
+          $(this).css({'margin-top': -height });
+          console.log(height)
           $(this).parent().css({'height':25})
           if (height > max_height)
             max_height = height
+          $(this).parent().find('h3').css({
+            'margin-top': 0
+          })
         }
       })
 
@@ -66,7 +76,8 @@
         'background':options.lineColor,
         'height': '2px',
         'margin-top': max_height ,
-        'margin-bootom': 50
+        'margin-bootom': 50,
+        'width': '93%'
       });
 
       details.css({
@@ -127,6 +138,24 @@
             'color': options.numColorActive
           })
           $(this).parent().find(details).css({'visibility':'visible','border-left': '1px solid ' + options.activeColors[$(this).parent().index()]}).animate({opacity: 1}, 500);
+
+          var thisLiIndex = $(this).parent().index()
+          if (thisLiIndex != list.children().length - 1){
+            jQuery.each(li,function(i){
+              if (i == list.children().length - 1)
+                return false;
+              else if (i < thisLiIndex){
+                $(this).addClass('active')
+                $(this).find(num).css({
+                  'background': options.activeColors[$(this).index()],
+                  'box-shadow': '0 0 0 0.5em ' + convertHex(options.activeColors[$(this).index()],50),
+                  'color': options.numColorActive
+                })
+                $(this).find(details).css({'visibility':'visible','border-left': '1px solid ' + options.activeColors[$(this).index()]}).animate({opacity: 1}, 500);
+              } else
+                return true;
+            })
+          }
         } else {
           $(this).parent().removeClass('active')
           $(this).css({
@@ -136,6 +165,24 @@
           })
 
           $(this).parent().find(details).css({opacity: 1.0, visibility: "visible"}).animate({opacity: 0}, 200);
+
+          var thisLiIndex = $(this).parent().index()
+          if (thisLiIndex != list.children().length - 1){
+            jQuery.each(li,function(i){
+              if (i == list.children().length - 1)
+                return false;
+              else if (i > thisLiIndex){
+                $(this).removeClass('active')
+                $(this).find(num).css({
+                  'background': options.inactiveColor,
+                  'box-shadow': '0 0 0 0.5em ' + convertHex(options.inactiveColor,50),
+                  'color': options.numColor
+                })
+                $(this).find(details).css({opacity: 1.0}).animate({opacity: 0}, 200);
+              } else
+                return true;
+            })
+          }
         }
       })
 
@@ -182,6 +229,13 @@
         li.last().find('div:nth-child(3)').animate({'margin-top': '-0.2em'}, 400).animate({'margin-top': '-0.3em'}, 400)
       }
       setInterval(animateIt, 0);
+      li.last().attr('data-after', options.after)
+      li.last().find(num).click(function(){
+        var el = $(this).parent().attr('data-after');
+        $('html, body').animate({ scrollTop: $('#'+el).offset().top }, 1000 );
+        return false; 
+      });
+   
     };
 
     return this.each(make); 
