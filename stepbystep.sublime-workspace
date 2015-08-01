@@ -95,7 +95,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2363,
+				"buffer_size": 3309,
 				"line_ending": "Windows"
 			}
 		},
@@ -103,7 +103,7 @@
 			"file": "src/jquery.StepByStep.js",
 			"settings":
 			{
-				"buffer_size": 7283,
+				"buffer_size": 9499,
 				"line_ending": "Windows"
 			}
 		},
@@ -119,7 +119,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 556,
+				"buffer_size": 1473,
 				"line_ending": "Windows"
 			}
 		}
@@ -248,7 +248,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -257,15 +257,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2363,
+						"buffer_size": 3309,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2326,
-								2326
+								425,
+								425
 							]
 						],
 						"settings":
@@ -278,7 +278,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -287,15 +287,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7283,
+						"buffer_size": 9499,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1269,
-								1265
+								2702,
+								2702
 							]
 						],
 						"settings":
@@ -306,10 +306,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 135.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -346,21 +346,22 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 556,
+						"buffer_size": 1473,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								533,
-								533
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2
+							"tab_size": 2,
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -408,7 +409,7 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "project.sublime-project",
+	"project": "stepbystep.sublime-project",
 	"replace":
 	{
 		"height": 62.0

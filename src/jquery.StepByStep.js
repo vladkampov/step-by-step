@@ -1,3 +1,7 @@
+// StepByStep.js — https://github.com/vladkampov/StepByStep.js
+// Licensed under the MIT license - http://opensource.org/licenses/MIT
+// Copyright © 2015 Vlad Kampov
+// http://kampov.com/
 (function($){
   jQuery.fn.StepByStep = function(options){
   	options = $.extend({
@@ -35,11 +39,13 @@
       	'float': 'left',
         'text-align': 'left',
       	'width': (100 / (list.children().length) + 1)  + '%',
-        'margin-top': '-1.35em',
+        'margin-top': '-1.15em',
         'position': 'relative',
-        'height': '350px'
+        'height': '350px',
+        'z-index': 2
       });
-      $(this).css({'overflow': 'auto','width':'960px'})
+      li.first().css('margin-left', (25 / (list.children().length) + 1) + '%')
+      $(this).css({'width':'100%'}) //'overflow': 'auto',
       li.last().css({'width': (100 / (list.children().length * 2))  + '%'})
       var details = $('.step-details');
       var max_height = 0;
@@ -51,18 +57,20 @@
           $(this).css('visibility','hidden')
         } 
         if (i % 2 == 0){
-          $(this).css({'padding': '0.4em 1em 0'}) 
+          $(this).css({
+            'padding': '0.4em 1em 0',
+            'margin-top': '1em'
+          }) 
           $(this).parent().find('p').css({
             'margin': 0
           })
-          $(this).parent().css({'height':25})
+          // $(this).parent().css({'height':25})
         }
         else {
           $(this).css({'padding': '0 1em 0.4em'});
           height = $(this).find('p').height()
-          $(this).css({'margin-top': -height });
-          console.log(height)
-          $(this).parent().css({'height':25})
+          $(this).css({'margin-top': '-10em' });
+          // $(this).parent().css({'height':25})
           if (height > max_height)
             max_height = height
           $(this).parent().find('h3').css({
@@ -70,22 +78,22 @@
           })
         }
       })
-
+      li.css({'height': max_height})
       list.css({
         'list-style-type':'none',
         'background':options.lineColor,
         'height': '2px',
-        'margin-top': max_height ,
-        'margin-bootom': 50,
-        'width': '93%'
+        'margin-top': max_height,
+        'margin-bootom': max_height / 4,
+        'padding': 'initial'
       });
-
       details.css({
-        'margin-left': '1.2em',
+        'margin-left': '1.25em',
         'border-left': '1px solid ' + options.inactiveColor,
         'opacity': 0,
         'position': 'absolute',
-        'width': '160%'
+        'width': '160%',
+        'z-index': 996
       })
 
       var div = document.createElement('div');
@@ -111,7 +119,9 @@
         '-o-transition-duration': '.4s', 
         '-moz-transition-duration': '.4s', 
         'transition-duration': '.4s',
-        'cursor': 'pointer'
+        'cursor': 'pointer',
+        'z-index': 999,
+        'position': 'absolute'
     	})
 
       jQuery.each($('div.number'),function(i){  
@@ -131,6 +141,7 @@
 
       num.click(function(){
         if (!$(this).parent().hasClass('active') && !$(this).hasClass('last')){
+          $(this).parent().find('.step-details').find('h3').css({'color': shadeColor(options.activeColors[$(this).parent().index()],-10)})
           $(this).parent().addClass('active')
           $(this).css({
             'background': options.activeColors[$(this).parent().index()],
@@ -151,6 +162,8 @@
                   'box-shadow': '0 0 0 0.5em ' + convertHex(options.activeColors[$(this).index()],50),
                   'color': options.numColorActive
                 })
+
+                $(this).find('.step-details').find('h3').css({'color': shadeColor(options.activeColors[$(this).index()],-10)})
                 $(this).find(details).css({'visibility':'visible','border-left': '1px solid ' + options.activeColors[$(this).index()]}).animate({opacity: 1}, 500);
               } else
                 return true;
@@ -195,7 +208,6 @@
               'box-shadow': '0 0 0 0.5em ' + convertHex(options.activeColors[$(this).parent().index()],50),
               'color': options.numColorActive
             })
-            $(this).parent().find('.step-details').find('h3').css({'color': shadeColor(options.activeColors[$(this).parent().index()],-10)})
           }},
         function(){
           if (!$(this).parent().hasClass('active'))
@@ -208,9 +220,10 @@
       li.last().find(num).addClass('last').css({'color': options.colorLast}).text('...')
       var div2 = document.createElement('div');
       li.last().append(div2).find('div:nth-child(2)').addClass('arrowDown').css({
-        'height': max_height / 6,
+        'height': max_height / 4,
         'border-left': '1px solid ' + options.inactiveColor,
-        'margin-left': '1.3em'
+        'margin-left': '1.3em',
+        'margin-top': '2em'
       })
       var div3 = document.createElement('div');
       li.last().append(div3).find('div:nth-child(3)').addClass('DaFckDown').text('<').css({
@@ -220,12 +233,12 @@
         'filter': 'progid:DXImageTransform.Microsoft.BasicImage(rotation=3)',
         '-o-transform': 'rotate(-90deg)',
         'position': 'absolute',
-        'margin-left': '0.25em',
+        'margin-left': '0.32em',
         'margin-top': '-0.3em'
       }).animate({'margin-top': '0em'}, 350).animate({'margin-top': '-0.3em'}, 350)
 
       function animateIt() {
-        li.last().find('div:nth-child(2)').animate({'height': max_height / 6}, 400).animate({'height': max_height / 7}, 400)
+        li.last().find('div:nth-child(2)').animate({'height': max_height / 4}, 400).animate({'height': max_height / 5}, 400)
         li.last().find('div:nth-child(3)').animate({'margin-top': '-0.2em'}, 400).animate({'margin-top': '-0.3em'}, 400)
       }
       setInterval(animateIt, 0);

@@ -1,6 +1,6 @@
 # StepByStep.js
 
-![StepByStep.js version](https://img.shields.io/badge/StepByStep.js-v1.0.0-green.svg)
+![StepByStep.js version](https://img.shields.io/badge/StepByStep.js-v1.0.1-green.svg)
 [![License](http://img.shields.io/badge/License-MIT-blue.svg)](http://opensource.org/licenses/MIT)
 
 StepByStep.js is a simple and cute diagram for your ul-lists based on jQuery. 
