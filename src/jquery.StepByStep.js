@@ -12,7 +12,8 @@
       numColorActive: '#fff',
       activeColors: ['#ec0101','#ffbf00', '#00a9fe', '#1bb012', '#888'],
       colorLast: '#004179',
-      after: 'StepByStep-after'
+      after: 'StepByStep-after',
+      animation: false
     }, options);
 
     function shadeColor(color, percent) {  
@@ -235,13 +236,15 @@
         'position': 'absolute',
         'margin-left': '0.32em',
         'margin-top': '-0.3em'
-      }).animate({'margin-top': '0em'}, 350).animate({'margin-top': '-0.3em'}, 350)
-
-      function animateIt() {
-        li.last().find('div:nth-child(2)').animate({'height': max_height / 4}, 400).animate({'height': max_height / 5}, 400)
-        li.last().find('div:nth-child(3)').animate({'margin-top': '-0.2em'}, 400).animate({'margin-top': '-0.3em'}, 400)
+      })
+      if (options.animation == true){
+        $('.DaFckDown').animate({'margin-top': '0em'}, 350).animate({'margin-top': '-0.3em'}, 350)
+        function animateIt() {
+          li.last().find('div:nth-child(2)').animate({'height': max_height / 4}, 400).animate({'height': max_height / 5}, 400)
+          li.last().find('div:nth-child(3)').animate({'margin-top': '-0.2em'}, 400).animate({'margin-top': '-0.3em'}, 400)
+        }
+        setInterval(animateIt, 0);
       }
-      setInterval(animateIt, 0);
       li.last().attr('data-after', options.after)
       li.last().find(num).click(function(){
         var el = $(this).parent().attr('data-after');
